@@ -1,0 +1,25 @@
+# 민감 정보
+.env.local
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# 테스트 파일
+*.pptx
+*.pdf
+*.png
+
+# 임시 폴더
+uploads/
+outputs/
+
+# IDE
+.vscode/
+.idea/

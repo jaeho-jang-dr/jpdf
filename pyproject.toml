@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jpdf"
+version = "1.1.0"
+description = "PDF/이미지 → 편집 가능 PPTX 변환기 (OCR + Inpainting)"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+    "flask>=2.3.0",
+    "pymupdf>=1.23.0",
+    "opencv-python>=4.8.0",
+    "python-pptx>=0.6.21",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "numpy>=1.24.0",
+    "werkzeug>=2.3.0",
+]
+
+[project.scripts]
+jpdf = "jpdf.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["jpdf*"]
